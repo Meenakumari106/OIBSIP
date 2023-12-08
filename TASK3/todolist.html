@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="color:gold;">To-Do List</h1>
+        <div id="app">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+        <div class="task-section">
+            <h2 style="color:coral">Pending Tasks</h2>
+            <ul id="pendingList" class="task-list"></ul>
+        </div>
+        <div class="task-section">
+            <h2 style="color:aqua">Completed Tasks</h2>
+            <ul id="completedList" class="task-list"></ul>
+        </div>
+    </div>
+
+    <script src="scriptodo.js"></script>
+</body>
+</html>
